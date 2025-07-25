@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Online Event Registration Form</title>
+</head>
+<body>
+
+  <h1>Event Registration</h1>
+
+  <form >
+    <label for="full-name">Full Name:</label><br />
+    <input type="text" id="full-name" name="full-name" required /><br /><br />
+    <label for="email">Email:</label><br />
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="example@domain.com"
+      required
+    /><br /><br />
+    <label for="phone">Phone Number:</label><br />
+    <input
+      type="tel"
+      id="phone"
+      name="phone"
+      pattern="[0-9]{10}"
+      placeholder="1234567890"
+      title="Enter a 10-digit phone number"
+      required
+    /><br /><br />
+    <label>Gender:</label><br />
+    <input type="radio" id="gender-male" name="gender" value="Male" required />
+    <label for="gender-male">Male</label><br />
+    <input
+      type="radio"
+      id="gender-female"
+      name="gender"
+      value="Female"
+      required
+    />
+    <label for="gender-female">Female</label><br />
+    <input
+      type="radio"
+      id="gender-other"
+      name="gender"
+      value="Other"
+      required
+    />
+    <label for="gender-other">Other</label><br /><br />
+    <label for="age-group">Age Group:</label><br />
+    <select id="age-group" name="age-group" required>
+      <option value="" disabled selected>Select your age group</option>
+      <option value="Under 18">Under 18</option>
+      <option value="18-24">18-24</option>
+      <option value="25-34">25-34</option>
+      <option value="35-44">35-44</option>
+      <option value="45-54">45-54</option>
+      <option value="55+">55+</option>
+    </select>
+    <br /><br />
+    <label>Topics of Interest:</label><br />
+    <input
+      type="checkbox"
+      id="topic-tech"
+      name="topics"
+      value="Technology"
+    />
+    <label for="topic-tech">Technology</label><br />
+    <input
+      type="checkbox"
+      id="topic-health"
+      name="topics"
+      value="Health"
+    />
+    <label for="topic-health">Health</label><br />
+    <input
+      type="checkbox"
+      id="topic-environment"
+      name="topics"
+      value="Environment"
+    />
+    <label for="topic-environment">Environment</label><br />
+    <input
+      type="checkbox"
+      id="topic-education"
+      name="topics"
+      value="Education"
+    />
+    <label for="topic-education">Education</label><br /><br />
+    <label for="comments">Additional Comments:</label><br />
+    <textarea
+      id="comments"
+      name="comments"
+      rows="4"
+      cols="40"
+      placeholder="Your comments here..."
+    ></textarea>
+    <br /><br />
+    <button type="submit">Register</button>
+  </form>
+
+</body>
+</html>
